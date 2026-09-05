@@ -40,19 +40,48 @@ button, input, select {
 }
 
 /* ==========================================
-   Header and Navbar
+   Educational Disclaimer Banner & Badges
    ========================================== */
-.navbar {
+.educational-banner {
+  background: #141414;
+  border-bottom: 1px solid rgba(229, 9, 20, 0.4);
+  color: #f5c518;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  position: relative;
+  z-index: 100;
+}
+
+.educational-banner strong {
+  color: #ffffff;
+}
+
+.navbar-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
+}
+
+/* ==========================================
+   Header and Navbar
+   ========================================== */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3.5rem;
-  z-index: 10;
+  padding: 1.25rem 3.5rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
 }
 
 .logo svg {
@@ -60,6 +89,34 @@ button, input, select {
   width: 148px;
   height: auto;
   display: block;
+}
+
+.clone-badge {
+  background: var(--netflix-red);
+  color: var(--netflix-white);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.demo-login-alert {
+  background: rgba(229, 9, 20, 0.15);
+  border: 1px solid rgba(229, 9, 20, 0.5);
+  color: #e6e6e6;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+}
+
+.demo-login-alert strong {
+  color: #ff6b6b;
 }
 
 .nav-actions {

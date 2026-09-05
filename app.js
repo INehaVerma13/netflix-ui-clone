@@ -157,7 +157,7 @@ function setupLoginForm() {
 
     // Successful login simulation
     if (isEmailValid && isPasswordValid) {
-      alert(`Welcome to Netflix! Logging in as: ${emailVal}`);
+      alert(`Demo Sign-In: Simulation successful as ${emailVal}! (Educational UI Clone)`);
       // In a real app, this would make an API call and redirect to dashboard
       window.location.href = 'index.html';
     }
